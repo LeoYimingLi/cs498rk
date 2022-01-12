@@ -1,0 +1,61 @@
+/* Your CSS here. */
+body {
+    font-size: 1.5rem;
+  }
+
+.inner {
+    width: 1000px;
+    height: 750px;
+    display: block;
+    background: grey;
+    position: absolute;
+    left:0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+
+}
+  
+img {
+    width: 150px;
+    height: 150px;
+    
+    padding-top: 3%;
+    margin: auto;
+    display: block;  /* put the image into block */
+}
+
+.name{
+    color: white;
+    text-align: center;
+}
+
+.email {
+    color: white;
+
+    font-style:italic;
+    text-align: center;
+
+}
+
+a {
+    display: block;  /* why some need block display but some doesn't ? */
+    color: indigo;
+    text-align: center;
+
+}
+
+p{
+    color: white;
+    text-align: left;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+/* a:link {
+    color:#8a2be2;
+}  
+a:visited {color:#00FF00;} 
+a:hover {color:#dda0dd;} 
+a:active {color:#87cefa;} */
+

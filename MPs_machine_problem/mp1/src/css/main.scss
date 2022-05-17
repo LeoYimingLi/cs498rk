@@ -1,0 +1,286 @@
+/* Your SCSS here. */
+html {
+  scroll-padding-top: 80px;
+  scroll-behavior: smooth;  // smooth scrolling effects
+}
+
+
+
+// cancel the default margin
+div,h1,h2,h3,h4,p,blockquote {
+  margin:0;
+  padding:0
+}
+
+
+
+/* Create a sticky and fixed navbar */
+#navbar {
+  overflow: hidden;
+  background-color: aliceblue;
+  padding: 50px 10px; /* Large padding will shrink on scroll*/
+  transition: 0.8s; /* transition when the padding decreases */
+  position: fixed; /* Sticky and fixed navbar */
+  width: 100%;
+  top: 0; /* locates at the top */
+  z-index: 99; // priority
+
+  /* Style the navbar links */
+  a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+
+  #logo {
+    font-size: 35px;
+    font-weight: bold;
+    transition: 0.8s;
+  }
+  
+  a:hover {
+    background-color: lightgrey;
+    color: black;
+  }
+
+  a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+
+  #navbar-right {
+    float: right;
+  }
+
+}
+
+/* Responsiveness - on screens less than 768px wide, 
+display the navbar vertically instead of horizontally */
+@media screen and (max-width: 768px) {
+  #navbar {
+    padding: 20px 10px !important; /* Use !important to avoid JS overrides the padding on small screens */
+    #navbar-right {
+      clear: both;
+      float: none;
+    }
+  }
+}
+
+
+
+div {
+  text-align: center;
+}
+
+
+#title0 {
+  padding-top: 180px; 
+  background-color:steelblue;
+
+  background-image: url('/assets/image.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 80% auto;
+  
+}
+
+#title1 {
+  padding-top: 15px; 
+  padding-bottom: 15px;
+  background-color:yellowgreen;
+  img {
+    width: 50%;
+  }
+}
+
+#title2 {
+  padding-top: 15px; 
+  padding-bottom: 15px; 
+  background-color: MediumTurquoise;
+  
+}
+#title3 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: MediumPurple;
+  img {
+    width: 25%;
+  }
+}
+
+
+
+/* Slideshow container */
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+
+  .mySlides {
+    display: none;  /* Hide images by default */
+    padding-bottom: 56%;
+    width: 100%;
+
+    img{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+  }
+
+  
+  /* Next and previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.8s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* put the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  /* Caption text */
+  .text {
+    color: white;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+}
+
+
+
+// flex-container (multi-column layout)
+.flex-container {
+  display: inline-flex; 
+  justify-content: space-between;
+  .item {
+    width: 100%;
+    img {
+        width: 90%;
+        height: 90%; 
+    }
+  }
+
+  #item1 {
+    background-color: yellowgreen;
+    padding: 15px;
+  }
+  #item2 {
+    background-color: lightskyblue;
+    padding: 15px;
+  }
+  #item3 {
+    background-color: steelblue;
+    padding: 15px;
+  }
+
+
+}
+
+
+
+/* modal */
+.modal {
+  display: none; /* Hidden by default*/
+  z-index: 100;  
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; /* Enable scroll */
+  background: rgba(0,0,0,0.9); /* opacity */
+
+  .modal-content {
+		width: 100%;
+		position: fixed;
+		img {
+			width: 60%;
+		}
+    p {
+      color: white;
+    }
+  }
+
+  // close button
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover, .close:focus {
+    color: 	lightgrey;
+    cursor: pointer;
+  }
+}
+
+
+// video
+.video {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+
+// footer
+footer {
+  text-align: center;
+  background-color: DarkSalmon;
+  color: white;
+}

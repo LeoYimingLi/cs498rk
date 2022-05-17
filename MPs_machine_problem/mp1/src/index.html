@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<script type="text/javascript" src="./js/main.js"></script>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- for font-awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- for responsive design -->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!-- <title>MP1</title> -->
+    </head>
+
+
+    <!-- navbar -->
+    <header id="navbar">
+        <a href="#default" id="logo">CS498RK - MP1 <i class="fa fa-refresh fa-spin"></i></a>
+        <div class="navnodes" id="navbar-right">
+            <a id="node1" href="#city">City</a>
+            <a id="node2" href="#bear">Bear</a>
+            <a id="node3" href="#icon">Icon</a>
+        </div>
+    </header>
+    
+    
+    <!-- sections -->
+    <div id="title0">
+        <a name="default"></a>
+        <h1>Background Image</h1>
+        <p>The polar bear is a hypercarnivorous bear whose native range lies largely within the Arctic Circle, encompassing the Arctic Ocean, its surrounding seas and surrounding land masses. 
+            It is the largest extant bear species, as well as the largest extant land carnivore.The polar bear is a hypercarnivorous bear whose native range lies largely within the Arctic Circle, encompassing the Arctic Ocean, its surrounding seas and surrounding land masses. It is the largest extant bear species, as well as the largest extant land carnivore.The polar bear is a hypercarnivorous bear whose native range lies largely within the Arctic Circle, encompassing the Arctic Ocean, its surrounding seas and surrounding land masses. It is the largest extant bear species, as well as the largest extant land carnivore.The polar bear is a hypercarnivorous bear whose native range lies largely within the Arctic Circle, encompassing the Arctic Ocean, its surrounding seas and surrounding land masses. It is the largest extant bear species, as well as the largest extant land carnivore.The polar bear is a hypercarnivorous bear whose native range lies largely within the Arctic Circle, encompassing the Arctic Ocean, its surrounding seas and surrounding land masses. It is the largest extant bear species, as well as the largest extant land carnivore.It is the largest extant bear species, as well as the largest extant land carnivore.The polar bear is a hypercarnivorous bear whose native range lies largely within the Arctic Circle, encompassing the Arctic Ocean, its surrounding seas and surrounding land masses. 
+        </p> 
+    </div>
+
+    <div id="title1">
+        <a name="city"></a>
+        <h1>City</h1>
+        <div class="w3-row-padding">
+            <div class="w3-third w3-lime ">
+              <h2>Chicago</h2>
+              <p>Chicago, on Lake Michigan in Illinois, is Famed for its bold architecture.</p>
+              <img src="assets/chicago.jpeg" class="w3-image">
+            </div>
+            <div class="w3-third w3-light-blue">
+              <h2>New York</h2>
+              <p>New York City comprises 5 boroughs sitting where the Hudson River meets the Atlantic Ocean.</p>
+              <img src="assets/ny.jpeg" class="w3-image">
+            </div>
+            <div class="w3-third w3-cyan ">
+              <h2>Los Angeles</h2>
+              <p>Los Angeles is a sprawling Southern California city and the center of the nation’s film and television industry.</p>
+                <img src="assets/la.jpeg" class="w3-image">
+            </div>
+        </div>
+    </div>
+
+    <div id="title2">
+        <a name="bear"><br></a>
+        <h1>Bear</h1>
+        <div class="w3-row-padding">
+            <div class="w3-twothird">
+                <img src="assets/image.jpg" class="w3-image">
+            </div>
+            <div class="w3-onethird">
+                <p>The polar bear is a hypercarnivorous bear whose native range lies largely within the Arctic Circle, encompassing the Arctic Ocean, its surrounding seas and surrounding land masses. It is the largest extant bear species, as well as the largest extant land carnivore. The polar bear is a hypercarnivorous bear whose native range lies largely within the Arctic Circle, encompassing the Arctic Ocean, its surrounding seas and surrounding land masses. It is the largest extant bear species, as well as the largest extant land carnivore.The polar bear is a hypercarnivorous bear whose native range lies largely within the Arctic Circle, encompassing the Arctic Ocean, its surrounding seas and surrounding land masses. It is the largest extant bear species, as well as the largest extant land carnivore.</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <div id="title3">
+        <a name="icon"><br></a>
+        <h1>Icon</h1>
+        <i class="fa fa-cog fa-spin fa-3x"></i>
+        <a target="_blank" href="https://github.com/LeoYimingLi">
+            <img src="assets/github.png">
+        </a>
+    </div>
+
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="assets/chicago.jpeg">
+            <div class="text">CHICAGO</div>
+        </div>
+        <div class="mySlides fade">
+            <img src="assets/la.jpeg">
+            <div class="text">LOS ANGELES</div>
+        </div>
+        <div class="mySlides fade">
+            <img src="assets/ny.jpeg">
+            <div class="text">NEW YORK</div>
+        </div>
+
+        <!-- Next and previous(UNICODE: &#10095;) buttons -->
+        <div id="arrow1" class="prev">&#10094;</div>
+        <div id="arrow2" class="next">&#10095;</div>
+    </div>
+  
+
+    <!-- flex-container -->
+    <div class="flex-container">
+        <div class="item" id="item1" >
+            <p>Modal1</p>
+            <img src="assets/chicago.jpeg">
+        </div>
+        <div class="item" id="item2">
+            <p>Modal2</p>
+            <img src="assets/ny.jpeg">
+        </div>
+        <div class="item" id="item3">
+            <p>Modal3</p>
+            <img src="assets/la.jpeg">
+        </div>
+    </div>
+
+    
+    <!-- modal -->
+    <div id="modal1" class="modal">
+        <div class="modal-content" id="content1">
+            <span class="close" id="close1">&times;</span>
+            <img src="assets/chicago.jpeg">
+            <p>Chicago</p>
+        </div>
+    </div>
+    <div id="modal2" class="modal">
+        <div class="modal-content" id="content2">
+            <span class="close" id="close2">&times;</span>
+            <img src="assets/ny.jpeg">
+            <p>New York</p>
+        </div>
+    </div>
+    <div id="modal3" class="modal">
+        <div class="modal-content" id="content3">
+            <span class="close" id="close3">&times;</span>
+            <img src="assets/la.jpeg">
+            <p>Los Angeles</p>
+        </div>
+    </div>
+
+
+    <!-- video -->
+    <video class="video" controls="controls" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="assets/cat.mp4" type="video/mp4">
+    </video>
+
+
+    <!-- footer -->
+    <footer>
+        <p>Rolling Practice ↑<br>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="yiming22@illinios.edu">yiming22@illinios.edu</a></p>
+    </footer>
+
+</html>
